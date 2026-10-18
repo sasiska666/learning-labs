@@ -1,0 +1,12 @@
+const assert = require("node:assert");
+const crypto = require("node:crypto");
+const { generate, SETS } = require("./js/gen.js");
+const rng = (buf) => crypto.randomFillSync(buf);
+const all = { lower: true, upper: true, digits: true, symbols: true };
+const pw = generate(24, all, rng);
+assert.strictEqual(pw.length, 24);
+assert.ok(/[a-z]/.test(pw) && /[A-Z]/.test(pw) && /[0-9]/.test(pw));
+assert.ok([...pw].some((c) => SETS.symbols.includes(c)));
+assert.throws(() => generate(10, { lower: false, upper: false, digits: false, symbols: false }, rng));
+assert.notStrictEqual(generate(24, all, rng), generate(24, all, rng));
+console.log("generator tests OK");

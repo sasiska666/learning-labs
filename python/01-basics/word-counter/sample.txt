@@ -1,0 +1,1 @@
+Привет мир. Привет, Python! Python is fun, python is simple.

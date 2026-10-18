@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password generator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Password generator</h1>
+    <p class="lead">Runs entirely in your browser. Nothing is sent or stored.</p>
+    <output id="out" class="pw" aria-live="polite">click Generate</output>
+    <div class="row">
+      <label for="len">Length: <span id="lenv">20</span></label>
+      <input id="len" type="range" min="8" max="64" value="20">
+    </div>
+    <fieldset>
+      <legend>Characters</legend>
+      <label><input type="checkbox" id="lower" checked> a-z</label>
+      <label><input type="checkbox" id="upper" checked> A-Z</label>
+      <label><input type="checkbox" id="digits" checked> 0-9</label>
+      <label><input type="checkbox" id="symbols" checked> symbols</label>
+    </fieldset>
+    <p id="bits" class="lead"></p>
+    <button id="gen" type="button">Generate</button>
+    <button id="copy" type="button">Copy</button>
+  </main>
+  <script src="js/gen.js"></script>
+</body>
+</html>

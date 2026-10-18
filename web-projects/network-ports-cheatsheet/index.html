@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Common network ports</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Common network ports</h1>
+    <p class="lead">Well-known ports and what normally runs on them. Search by number, protocol or name.</p>
+    <label for="q">Search</label>
+    <input id="q" type="search" placeholder="22, ssh, dns ..." autocomplete="off">
+    <p id="count" aria-live="polite"></p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Port</th><th>Transport</th><th>Service</th><th>Notes</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p class="note">Ports are conventions, not guarantees: a service can listen on any port.</p>
+  </main>
+  <script src="js/ports.js"></script>
+</body>
+</html>

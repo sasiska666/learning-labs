@@ -1,9 +1,9 @@
 # Python
 
-| Folder | What goes here |
-|--------|----------------|
-| `01-basics/` | Small exercises: variables, loops, functions, files |
-| `02-practical-works/` | University practical works, one folder per work (`practical-01/`, ...) |
-| `03-mini-projects/` | Own scripts and small tools |
+| Folder | Works |
+|--------|-------|
+| [01-basics](01-basics/) | number-guess, word-counter, temperature-converter |
+| [02-practical-works](02-practical-works/) | reserved for the author's own university practical works |
+| [03-mini-projects](03-mini-projects/) | password-strength-checker, auth-log-analyzer, file-hash-verifier |
 
-Each work folder: the `.py` files, the assignment text if you may publish it, and a short `README.md` with the run command (`python main.py`).
+All works here (except the reserved folder) were written by Claude (Anthropic AI) from prompts by Mansur Karashashev. They use only the standard library and run their tests with `python -m unittest`.

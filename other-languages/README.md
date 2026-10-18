@@ -1,3 +1,9 @@
 # Other languages
 
-Create one subfolder per language only when there is real work in it (for example `c/`, `java/`, `javascript/`). Do not add empty language folders.
+| Language | Works |
+|----------|-------|
+| [c](c/) | caesar-cipher, stack-vs-heap-demo, file-line-counter |
+| [javascript](javascript/) | url-slugify, json-config-validator, fizzbuzz-cli |
+| [bash](bash/) | system-report, safe-backup, duplicate-finder |
+
+Written by Claude (Anthropic AI) from prompts by Mansur Karashashev.

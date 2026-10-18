@@ -1,3 +1,3 @@
-# 02-practical-works
+# Practical works
 
-Add work folders here. Use `docs/` template for each README.
+Reserved for the author's own university practical works (one folder per work). Not generated here, because these are graded personal assignments.
